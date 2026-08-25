@@ -22,3 +22,9 @@ thought of `dict` right away - letter : frequency
 2. Loop through second string, check if letter is in `dict`. If it is subtract 1 from frequency, if letter isnt in `dict`, strings dont match = return `false` 
 3. Loop through `dict`, if any `keys` dont have a `value` of 0, strings dont match (regardless of order) = return `false`, esle return `true`
 - O(n) time and space
+
+Second submission reduced number of loops
+**third submission** - solution posted by neetcode:
+1. check for equal lengths
+2. initialize 2 dicts/hashmaps
+3. loop through length of one string, add to the `hashmap` 1 (saw the letter) + the current count if it was seen before (get(key, fallback) method - retrieves the valuse for the key and uses a fallback value)
